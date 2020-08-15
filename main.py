@@ -1,25 +1,14 @@
-class HtmlDocument:
-    def __init__(self):
-        pass
-
-class HtmlManager:
-    def __init__(self):
-        pass
-    def creating_html(self):
-        file = open('demo.html', 'wb')
-        
-        content = """<html>
-        <head></head>
-        <body><p>Hello World!</p></body>
-        </html>"""
-
-        file.write(content)
-        file.close()
+from DocumentHtml import HtmlDocument 
+from ManagerHtml import HtmlManager
+from AWSManager import AWS_Manager
     
 
+manager = HtmlManager()
+manager.creating_html()
+manager.save()
 
-class AWSManager:
-    def __init__(self):
-        pass
+
+
+
 
     
